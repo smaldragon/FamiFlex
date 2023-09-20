@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Memory Lib")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Memory_Lib.kicad_sym")(options "")(descr ""))
+  (lib (name "Famicom Lib")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Famicom.kicad_sym")(options "")(descr ""))
+)
