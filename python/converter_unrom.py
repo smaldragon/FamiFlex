@@ -2,7 +2,7 @@ import sys
 argv = sys.argv
 
 if len(sys.argv) >= 2:
-filename = sys.argv[1]
+    filename = sys.argv[1]
     org_data = None
     with open(filename, "rb") as f:
         org_data = f.read()
@@ -13,7 +13,7 @@ filename = sys.argv[1]
         chr_data = []
         print(len(org_data),len(prg_data),len(chr_data))
 
-    banks = prg_data / 0x4000
+    banks = int (len(prg_data) / 0x4000)
     banks_data = []
     for i in range(banks):
         banks_data.append(prg_data[(i*0x4000):((i+1)*0x4000)])
